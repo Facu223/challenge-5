@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.button_info {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 11px;
+  
+}
+
+
+.button_info:hover {
+  background-color: yellow;
+}

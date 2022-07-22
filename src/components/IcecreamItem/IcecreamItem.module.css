@@ -1,0 +1,33 @@
+.wrapper {
+  border: 1px solid rgb(59, 59, 245);
+  margin: 10px;
+  margin-bottom: 60px;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  min-width: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper img {
+  object-fit: cover;
+  width: 96%;
+  height: 90%;
+  outline: 1px solid black;
+}
+
+.wrapper p {
+  width: 96%;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.price {
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+}

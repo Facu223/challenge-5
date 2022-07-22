@@ -1,0 +1,17 @@
+.wrapper {
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li{
+    margin: 5px;
+    padding: 6px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: context-menu;
+}
