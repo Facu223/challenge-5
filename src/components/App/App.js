@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
-import IcecreamMaker from "../IcecreamMaker/IcecreamMaker";
+import TripMaker from '../TripMaker/TripMaker'
 import UserContext from "../User/User";
 
 const user = {
@@ -12,7 +12,7 @@ function App() {
   return (
     <UserContext.Provider value={user}>
       <Header />
-      <IcecreamMaker />
+      <TripMaker />
     </UserContext.Provider>
   );
 }

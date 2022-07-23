@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import { IcecreamContext } from "../IcecreamMaker/IcecreamMaker";
+import { TripContext } from "../TripMaker/TripMaker";
 import TripButtonStyles from "./TripButton.module.css";
 
 const TripButton = ({ toBuy, place, email }) => {
-  const { setButtonVisible, setIcecream } = useContext(IcecreamContext);
+  const { setButtonVisible, setTrip } = useContext(TripContext);
 
+  // En onClick, se llama a setTrip, de acuerdo a si el item es RESERVAR, COMPRAR, PROMO o CANCELAR
   return (
     <button
       className={
@@ -14,13 +15,13 @@ const TripButton = ({ toBuy, place, email }) => {
       }
       onClick={() => {
         if (toBuy === "RESERVAR") {
-          setIcecream({ place, email, type: "RESERVAR", setButtonVisible });
+          setTrip({ place, email, type: "RESERVAR", setButtonVisible });
         } else if (toBuy === "COMPRAR") {
-          setIcecream({ place, type: "COMPRAR", setButtonVisible });
+          setTrip({ place, type: "COMPRAR", setButtonVisible });
         } else if (toBuy === "PROMO") {
-          setIcecream({ place, type: "PROMO" });
+          setTrip({ place, type: "PROMO" });
         } else {
-          setIcecream({ type: "CANCELAR", email, setButtonVisible });
+          setTrip({ type: "CANCELAR", email, setButtonVisible });
         }
       }}
     >

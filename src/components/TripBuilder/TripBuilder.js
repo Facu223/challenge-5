@@ -1,7 +1,8 @@
 import React from "react";
-import IcecreamItem from "../IcecreamItem/IcecreamItem";
-import IcecreamBuilderStyles from "./IcecreamBuilder.module.css";
+import TripItem from "../TripItem/TripItem";
+import TripItemStyles from "./TripBuilder.module.css";
 
+// Creacion de array con objetos
 const places = [
   {
     id: 1,
@@ -32,14 +33,15 @@ const places = [
   },
 ];
 
-const IcecreamBuilder = () => {
+// Recorre el array y por cada elemento, renderiza una card
+const TripBuilder = () => {
   return (
-    <div className={IcecreamBuilderStyles.wrapper}>
+    <div className={TripItemStyles.wrapper}>
       {places.map((place, index) => (
-        <IcecreamItem key={index} place={place} />
+        <TripItem key={index} place={place} />
       ))}
     </div>
   );
 };
 
-export default IcecreamBuilder;
+export default TripBuilder;
